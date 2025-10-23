@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --grey: #eeeeee;
+    --light-grey: #f7f7f7;
+    --dark-grey: #e2e2e2;
+    --darkest-grey: #b5b5b5;
+    --blue: #3829E0;
+    --text-grey: #8A8A8A;
+    --text-black: black;
+    --text-white: white;
+} 
+
+h1, h2, h3 , p, a, button {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--grey);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+
+.card {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+/* TOP CARD */
+
+.card-imagesection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+}
+
+/* BOTTOM CARD */
+
+.card-main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+/* MAIN TEXT */
+
+.card-main-title {
+    color: var(--text-black);
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 2.5rem;
+}
+
+.card-main-text {
+    color: var(--text-grey);
+    font-size: 1.25rem;
+}
+
+/* ANNUAL PLAN */
+
+.card-main-plan {
+    background-color: var(--light-grey);
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* PLAN ICON */
+.card-main-plan-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-grey);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+.card-main-plan-image {
+    opacity: 75%;
+}
+
+/* PLAN INFO */
+.card-main-plan-info {
+    text-align: start;
+}
+
+.card-main-plan-info-title {
+    color: var(--text-black);
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.card-main-plan-info-text {
+    color: var(--text-grey);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.card-main-plan-change {
+    color: var(--blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* PAY BUTTON */
+
+.card-main-pay {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 1.75rem 0;
+    border: 2px solid var(--blue);
+    border-radius: 1rem;
+    transition: all .06s ease-in-out;
+}
+
+.card-main-pay:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.card-main-pay:active {
+    scale: 0.85;
+}
+
+/* CANCEL BUTTON */
+.card-main-cancel {
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-grey);
+}
+
+.card-main-cancel:hover {
+    cursor: pointer;
+    color: red;
+}
