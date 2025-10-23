@@ -12,9 +12,6 @@
     --text-white: white;
 } 
 
-h1, h2, h3 , p, a, button {
-    font-family: "Red Hat Display", sans-serif;
-}
 
 * {
     box-sizing: border-box;
@@ -28,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Red Hat Display", sans-serif;
 }
 
 /* CARD */
@@ -137,7 +135,7 @@ body {
     font-size: 1.25rem;
     font-weight: 700;
     width: 100%;
-    padding: 1.75rem 0;
+    padding: 1.5rem 0;
     border: 2px solid var(--blue);
     border-radius: 1rem;
     transition: all .06s ease-in-out;
