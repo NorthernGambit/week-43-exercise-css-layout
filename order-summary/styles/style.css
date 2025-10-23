@@ -164,4 +164,6 @@ body {
 .card-main-cancel:hover {
     cursor: pointer;
     color: red;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
